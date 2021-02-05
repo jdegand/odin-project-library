@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+  </head>
+  <body>
+    <div>
+      <h1>52 Weeks 52 Books Challenge</h1>
+      <div>
+        <form id="form" action="">
+          <label for="title">Book Title</label><br>
+          <input type="text" id="title" name="title" minlength="3" maxlength="30" required>
+          <br>
+          <br>
+          <label for="author">Author</label><br>
+          <input type="text" id="author" name="author" minlength="3" maxlength="30" required>
+          <br>
+          <br>
+          <label for="read">Read ?</label>
+          <select id="read" name="read">
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+          <br>
+          <br>
+          <div class="slidecontainer">
+            <label for="pages">Pages</label></br>
+            <input type="range" min="100" max="1000" value="350" class="slider" id="pages" required>
+            <div id="range-display"></div>
+          </div>
+          <br>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div>
+        <table>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Read</th>
+          <th>Pages</th>
+          <tbody id="table">
+          </tbody>
+        </table>
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
